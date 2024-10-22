@@ -1,0 +1,12 @@
+[Unit]
+Description=MQTT Service Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /YOUR_FILE_PATH_HERE/service.py
+Restart=always
+User=Username
+WorkingDirectory=/usr/local/bin/
+
+[Install]
+WantedBy=multi-user.target
